@@ -1,0 +1,105 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                 String    @id @default(uuid())
+  name               String    @unique
+  email              String    @unique
+  avatarUrl          String?
+  passwordHash       String?
+  refreshTokenHash   String?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  twoFactorEnabled   Boolean?  @default(false)
+  twoFactorSecret    String?
+  online             Boolean?  @default(false)
+  friends            String[]
+  friendRequests     String[]
+  friendRequestsSent String[]
+  blockedUsers       String[]
+  blockedBy          String[]
+  gamesHistory       Int[]
+  games              Int       @default(0)
+  wins               Int       @default(0)
+  losses             Int       @default(0)
+  played             Int       @default(0)
+  winRate            Float?
+  playTime           Int       @default(0)
+  score              Int       @default(100)
+  rank               Int?
+  owner              Channel[] @relation("owner")
+  messages           Message[]
+  // muted              Mute[]
+  admin              Channel[] @relation("admin")
+  blockedFrom        Channel[] @relation("blocked")
+  invited            Channel[] @relation("invite")
+  member             Channel[] @relation("member")
+}
+
+model Channel {
+  id         String    @id @default(uuid())
+  name       String    @default(uuid())
+  picture    String?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  dm         Boolean   @default(false)
+  private    Boolean   @default(false)
+  isPassword Boolean   @default(false)
+  password   String?
+  ownerId    String?
+  owner      User?     @relation("owner", fields: [ownerId], references: [id])
+  messages   Message[]
+  muted          String[]
+  admins     User[]    @relation("admin")
+  blocked    User[]    @relation("blocked")
+  inviteds   User[]    @relation("invite")
+  members    User[]    @relation("member")
+}
+
+// model Mute {
+//   id        String   @id @default(uuid())
+//   channelId String
+//   userId    String
+//   begin     DateTime @default(now())
+//   end       DateTime @default(now())
+//   finished  Boolean  @default(false)
+//   channel   Channel  @relation(fields: [channelId], references: [id])
+//   user      User     @relation(fields: [userId], references: [id])
+// }
+
+model Message {
+  id         String    @id @default(uuid())
+  message   String
+  createdAt DateTime @default(now())
+  sender    User     @relation(fields: [senderId], references: [id])
+  senderId  String
+  room      Channel     @relation(fields: [roomId], references: [id])
+  roomId    String
+  nickName  String
+  avatar    String
+}
+
+model Game {
+  id       String   @id @default(uuid())
+  userA    String
+  userB    String
+  score1   Int
+  score2   Int
+  begin    DateTime
+  end      DateTime
+  duration Int?
+  type     String
+}
+
+enum RoomPrivacy {
+  PUBLIC
+  PRIVATE
+  PROTECTED
+}

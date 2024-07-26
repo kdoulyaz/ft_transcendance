@@ -1,0 +1,156 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User1",
+      "value": "Hello!",
+      "senderId": "123"
+    },
+    {
+      "id": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User2",
+      "value": "Hi there!",
+      "senderId": "456"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "nickName": "User3",
+      "value": "How are you?",
+      "senderId": "789"
+    }
+  ],
+  "dms": [
+    {
+      "id": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "name": "Phoenix services",
+      "isRoom": true
+    },
+    {
+      "id": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "name": "Simonab",
+      "isRoom": false
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "name": "Mama",
+      "isRoom": false
+    },
+    {
+      "id": 4,
+      "avatar": "https://avatars.githubusercontent.com/u/111673936?v=4",
+      "name": "hajar",
+      "isRoom": true
+    }
+  ]
+}
